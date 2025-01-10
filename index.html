@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Web Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+        .social-icons a {
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+        .form-control, .btn {
+            border-radius: 0.5rem;
+        }
+        #contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .project-img {
+            max-width: 100%;
+            height: auto;
+            border: none; /* Elimina bordes no deseados */
+            margin: 0; /* Ajusta márgenes */
+        }
+        footer {
+            background-color: #1f1f1f;
+        }
+        .carousel-item img {
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .construction-message {
+            color: yellow;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .about-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto 0; /* Centra la imagen */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-building"></i> Corporate Web Template</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#social">Social Media</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="construction-message">
+            🛠️ Website under construction!
+        </div>
+
+        <section id="about" class="mb-5">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">We are a passionate community dedicated to showcasing and supporting emerging talents across various creative fields.</p>
+            <img src="image-1.jpg" alt="About Us" class="about-img">
+        </section>
+
+        <section id="projects" class="mb-5">
+            <h2 class="text-center">Our Projects</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4>Feature Films</h4>
+                    <img src="image-1.jpg" alt="Project Example" class="img-fluid project-img mb-3">
+                    <p>Producing innovative and inspiring feature films.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Short Films</h4>
+                    <img src="image-2.jpg" alt="Project Example" class="img-fluid project-img mb-3">
+                    <p>Captivating audiences with compelling short stories.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Creative Writing</h4>
+                    <img src="image-3.jpg" alt="Project Example" class="img-fluid project-img mb-3">
+                    <p>Promoting unique voices in the world of literature.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="mb-5">
+            <h2 class="text-center">Image Gallery</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image-1.jpg" class="d-block w-100" alt="Gallery Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image-2.jpg" class="d-block w-100" alt="Gallery Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image-3.jpg" class="d-block w-100" alt="Gallery Image">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="social" class="mb-5">
+            <h2 class="text-center">Follow Us</h2>
+            <div class="social-icons text-center">
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <h2 class="text-center">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="example@domain.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light w-100">Send</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="text-white text-center py-3">
+        <p>© 2025 Corporate Web Template. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
