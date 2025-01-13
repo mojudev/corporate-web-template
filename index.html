@@ -11,9 +11,6 @@
             background-color: #121212;
             color: #ffffff;
         }
-        .navbar {
-            z-index: 1030; /* Asegura que el menú esté siempre encima de otros elementos */
-        }
         .navbar-brand {
             font-weight: bold;
         }
@@ -35,8 +32,8 @@
         .project-img {
             max-width: 100%;
             height: auto;
-            border: none;
-            margin: 0;
+            border: none; /* Elimina bordes no deseados */
+            margin: 0; /* Ajusta márgenes */
         }
         footer {
             background-color: #1f1f1f;
@@ -49,13 +46,16 @@
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto 0;
+            margin: 20px auto 0; /* Centra la imagen */
+        }
+        .container {
+            margin-top: 80px; /* Espacio para evitar que el contenido quede cubierto por el menú fijo */
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
+    <!-- Menú flotante -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="bi bi-building"></i> Corporate Web Template</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +79,7 @@
         </div>
     </nav>
 
-    <!-- Page Content -->
+    <!-- Contenido principal -->
     <div class="container mt-5">
         <section id="about" class="mb-5">
             <h2 class="text-center">About Us</h2>
@@ -87,7 +87,6 @@
             <img src="image-1.jpg" alt="About Us" class="about-img">
         </section>
 
-        <!-- Other sections remain unchanged -->
         <section id="projects" class="mb-5">
             <h2 class="text-center">Our Projects</h2>
             <div class="row text-center">
@@ -112,6 +111,11 @@
         <section id="gallery" class="mb-5">
             <h2 class="text-center">Image Gallery</h2>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="image-1.jpg" class="d-block w-100" alt="Gallery Image">
@@ -123,7 +127,44 @@
                         <img src="image-3.jpg" class="d-block w-100" alt="Gallery Image">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+        </section>
+
+        <section id="social" class="mb-5">
+            <h2 class="text-center">Follow Us</h2>
+            <div class="social-icons text-center">
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <h2 class="text-center">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="example@domain.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light w-100">Send</button>
+            </form>
         </section>
     </div>
 
