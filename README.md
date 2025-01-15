@@ -1,6 +1,9 @@
 # Corporate Web Template
 
-![Beta Icon](https://img.icons8.com/ios/452/beta.png) **Beta Version**  
+[![Status](https://img.shields.io/badge/Status-Beta-yellow)](https://github.com/mojudev/corporate-web-template)  
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)  
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen)](https://github.com/mojudev/corporate-web-template)  
+
 A responsive and modern HTML template designed for corporate or general-purpose websites. This project is simple, lightweight, and easy to customize.  
 *Free to use and modify for any project.*
 
