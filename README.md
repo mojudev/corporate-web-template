@@ -1,9 +1,10 @@
 # Corporate Web Template
 
-A responsive and modern HTML template with integrated CSS, designed for corporate or general-purpose websites. This project is simple, lightweight, and easy to customize.
+![Beta Icon](https://img.icons8.com/ios/452/beta.png) **Beta Version**  
+A responsive and modern HTML template designed for corporate or general-purpose websites. This project is simple, lightweight, and easy to customize.  
+*Free to use and modify for any project.*
 
 - [DEMO](https://mojudev.github.io/corporate-web-template/)
-
 
 ## Features
 
@@ -65,9 +66,3 @@ Contributions are welcome! Please fork this repository, create a new branch, and
 
 - Icons used are from [Bootstrap Icons](https://icons.getbootstrap.com/).
 - Placeholder images are not included. Replace them with your own.
-
----
-
-### Author
-
-Developed by [Ivan Moya](https://github.com/mojudev).
